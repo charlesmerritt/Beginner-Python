@@ -354,6 +354,7 @@ Practice organizing your work, committing changes, and pushing your code to GitH
 ## Skills practiced
 
 - creating folders
+- creating and working on your own branch
 - checking file status
 - staging files
 - committing files
@@ -363,11 +364,28 @@ Practice organizing your work, committing changes, and pushing your code to GitH
 
 Take all of the projects you have completed and place them in their own folders.
 
-Then commit and push your work.
+Do your work on your own Git branch instead of working directly on `main`.
+
+Then commit and push your branch.
 
 ## Useful Git commands
 
 ```bash
+# Start from the main branch
+git checkout main
+
+# Get the latest version of the project
+git pull
+
+# Create your own branch
+git branch andrew-projects
+
+# Switch to your branch
+git checkout andrew-projects
+
+# See which branch you are on
+git branch
+
 # See which files have changed
 git status
 
@@ -377,8 +395,8 @@ git add .
 # Commit your work
 git commit -m "Add beginner Python projects"
 
-# Push your commit to GitHub
-git push
+# Push your branch to GitHub
+git push -u origin andrew-projects
 ```
 
 Make sure you are connected to the remote repository:
@@ -397,6 +415,7 @@ git remote -v
 
 - Each project is in its own folder.
 - Each folder contains the files for that project.
+- `git branch` shows that you are working on your own branch.
 - `git status` shows the files you expect.
 - Your work has been committed.
-- Your commit has been pushed to GitHub.
+- Your branch has been pushed to GitHub.
