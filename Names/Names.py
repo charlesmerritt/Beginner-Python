@@ -3,4 +3,4 @@ from datetime import date
 today = date.today()
 
 def greeting(name, birthday):
-   
+   print(name)
